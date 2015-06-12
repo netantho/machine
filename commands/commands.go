@@ -14,7 +14,6 @@ import (
 
 	"github.com/netantho/machine/drivers"
 	_ "github.com/netantho/machine/drivers/amazonec2"
-	_ "github.com/netantho/machine/drivers/digitalocean"
 	_ "github.com/netantho/machine/drivers/exoscale"
 	_ "github.com/netantho/machine/drivers/generic"
 	_ "github.com/netantho/machine/drivers/google"
