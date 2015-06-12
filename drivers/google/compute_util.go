@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/machine/log"
-	"github.com/docker/machine/ssh"
+	"github.com/netantho/machine/log"
+	"github.com/netantho/machine/ssh"
 	raw "google.golang.org/api/compute/v1"
 )
 

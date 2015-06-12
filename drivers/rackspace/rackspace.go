@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/codegangsta/cli"
-	"github.com/docker/machine/drivers"
-	"github.com/docker/machine/drivers/openstack"
-	"github.com/docker/machine/log"
+	"github.com/netantho/machine/drivers"
+	"github.com/netantho/machine/drivers/openstack"
+	"github.com/netantho/machine/log"
 )
 
 // Driver is a machine driver for Rackspace. It's a specialization of the generic OpenStack one.

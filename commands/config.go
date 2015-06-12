@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/codegangsta/cli"
-	"github.com/docker/machine/log"
-	"github.com/docker/machine/utils"
+	"github.com/netantho/machine/log"
+	"github.com/netantho/machine/utils"
 )
 
 func cmdConfig(c *cli.Context) {

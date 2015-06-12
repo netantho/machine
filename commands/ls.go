@@ -7,8 +7,8 @@ import (
 	"text/tabwriter"
 
 	"github.com/codegangsta/cli"
-	"github.com/docker/machine/libmachine"
-	"github.com/docker/machine/log"
+	"github.com/netantho/machine/libmachine"
+	"github.com/netantho/machine/log"
 )
 
 // FilterOptions -

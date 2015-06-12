@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/docker/machine/log"
+	"github.com/netantho/machine/log"
 )
 
 const (

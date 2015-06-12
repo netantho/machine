@@ -9,10 +9,10 @@ import (
 	"time"
 
 	"github.com/codegangsta/cli"
-	"github.com/docker/machine/drivers"
-	"github.com/docker/machine/log"
-	"github.com/docker/machine/ssh"
-	"github.com/docker/machine/state"
+	"github.com/netantho/machine/drivers"
+	"github.com/netantho/machine/log"
+	"github.com/netantho/machine/ssh"
+	"github.com/netantho/machine/state"
 )
 
 const (

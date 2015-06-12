@@ -8,10 +8,10 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/docker/machine/log"
+	"github.com/netantho/machine/log"
 
 	"github.com/codegangsta/cli"
-	"github.com/docker/machine/utils"
+	"github.com/netantho/machine/utils"
 )
 
 const (

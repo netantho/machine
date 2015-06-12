@@ -6,11 +6,11 @@ import (
 
 	"github.com/codegangsta/cli"
 
-	"github.com/docker/machine/commands"
-	"github.com/docker/machine/log"
-	"github.com/docker/machine/ssh"
-	"github.com/docker/machine/utils"
-	"github.com/docker/machine/version"
+	"github.com/netantho/machine/commands"
+	"github.com/netantho/machine/log"
+	"github.com/netantho/machine/ssh"
+	"github.com/netantho/machine/utils"
+	"github.com/netantho/machine/version"
 )
 
 var AppHelpTemplate = `Usage: {{.Name}} {{if .Flags}}[OPTIONS] {{end}}COMMAND [arg...]
@@ -56,7 +56,7 @@ func main() {
 	app := cli.NewApp()
 	app.Name = path.Base(os.Args[0])
 	app.Author = "Docker Machine Contributors"
-	app.Email = "https://github.com/docker/machine"
+	app.Email = "https://github.com/netantho/machine"
 	app.Before = func(c *cli.Context) error {
 		os.Setenv("MACHINE_STORAGE_PATH", c.GlobalString("storage-path"))
 		if c.GlobalBool("native-ssh") {

@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/docker/machine/drivers"
-	"github.com/docker/machine/libmachine"
-	"github.com/docker/machine/state"
+	"github.com/netantho/machine/drivers"
+	"github.com/netantho/machine/libmachine"
+	"github.com/netantho/machine/state"
 )
 
 type ScpFakeDriver struct {

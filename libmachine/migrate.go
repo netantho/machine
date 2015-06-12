@@ -3,10 +3,10 @@ package libmachine
 import (
 	"path/filepath"
 
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/engine"
-	"github.com/docker/machine/libmachine/swarm"
-	"github.com/docker/machine/utils"
+	"github.com/netantho/machine/libmachine/auth"
+	"github.com/netantho/machine/libmachine/engine"
+	"github.com/netantho/machine/libmachine/swarm"
+	"github.com/netantho/machine/utils"
 )
 
 // In the 0.0.1 => 0.0.2 transition, the JSON representation of

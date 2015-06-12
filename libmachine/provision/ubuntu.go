@@ -3,13 +3,13 @@ package provision
 import (
 	"fmt"
 
-	"github.com/docker/machine/drivers"
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/engine"
-	"github.com/docker/machine/libmachine/provision/pkgaction"
-	"github.com/docker/machine/libmachine/swarm"
-	"github.com/docker/machine/log"
-	"github.com/docker/machine/utils"
+	"github.com/netantho/machine/drivers"
+	"github.com/netantho/machine/libmachine/auth"
+	"github.com/netantho/machine/libmachine/engine"
+	"github.com/netantho/machine/libmachine/provision/pkgaction"
+	"github.com/netantho/machine/libmachine/swarm"
+	"github.com/netantho/machine/log"
+	"github.com/netantho/machine/utils"
 )
 
 func init() {

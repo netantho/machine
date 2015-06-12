@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/codegangsta/cli"
-	"github.com/docker/machine/log"
+	"github.com/netantho/machine/log"
 )
 
 func cmdActive(c *cli.Context) {

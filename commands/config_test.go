@@ -11,10 +11,10 @@ import (
 	"testing"
 
 	"github.com/codegangsta/cli"
-	"github.com/docker/machine/libmachine"
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/engine"
-	"github.com/docker/machine/libmachine/swarm"
+	"github.com/netantho/machine/libmachine"
+	"github.com/netantho/machine/libmachine/auth"
+	"github.com/netantho/machine/libmachine/engine"
+	"github.com/netantho/machine/libmachine/swarm"
 )
 
 func TestCmdConfig(t *testing.T) {

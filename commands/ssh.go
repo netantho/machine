@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/docker/machine/log"
-	"github.com/docker/machine/state"
+	"github.com/netantho/machine/log"
+	"github.com/netantho/machine/state"
 
 	"github.com/codegangsta/cli"
 )

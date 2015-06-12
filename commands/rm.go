@@ -2,7 +2,7 @@ package commands
 
 import (
 	"github.com/codegangsta/cli"
-	"github.com/docker/machine/log"
+	"github.com/netantho/machine/log"
 )
 
 func cmdRm(c *cli.Context) {

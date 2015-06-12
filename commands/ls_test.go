@@ -3,10 +3,10 @@ package commands
 import (
 	"testing"
 
-	"github.com/docker/machine/drivers/fakedriver"
-	"github.com/docker/machine/libmachine"
-	"github.com/docker/machine/libmachine/swarm"
-	"github.com/docker/machine/state"
+	"github.com/netantho/machine/drivers/fakedriver"
+	"github.com/netantho/machine/libmachine"
+	"github.com/netantho/machine/libmachine/swarm"
+	"github.com/netantho/machine/state"
 	"github.com/stretchr/testify/assert"
 )
 

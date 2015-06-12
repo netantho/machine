@@ -28,11 +28,11 @@ help, would like to contribute, or simply want to talk about to the project with
 like-minded individuals, we have a number of open channels for communication.
 
 - To report bugs or file feature requests: please use the [issue tracker on
-  Github](https://github.com/docker/machine/issues).
+  Github](https://github.com/netantho/machine/issues).
 - To talk about the project with people in real time: please join the
   `#docker-machine` channel on IRC.
 - To contribute code or documentation changes: please [submit a pull request on
-  Github](https://github.com/docker/machine/pulls).
+  Github](https://github.com/netantho/machine/pulls).
 
 For more information and resources, please visit
 [https://docs.docker.com/project/get-help/](https://docs.docker.com/project/get-help/).
@@ -43,12 +43,12 @@ Docker Machine is supported on Windows, OS X, and Linux and is installable as on
 standalone binary. The links to the binaries for the various platforms and
 architectures are below:
 
-- [Windows - 32bit](https://github.com/docker/machine/releases/download/v0.2.0/docker-machine_windows-386.exe)
-- [Windows - 64bit](https://github.com/docker/machine/releases/download/v0.2.0/docker-machine_windows-amd64.exe)
-- [OSX - x86_64](https://github.com/docker/machine/releases/download/v0.2.0/docker-machine_darwin-amd64)
-- [OSX - (old macs)](https://github.com/docker/machine/releases/download/v0.2.0/docker-machine_darwin-386)
-- [Linux - x86_64](https://github.com/docker/machine/releases/download/v0.2.0/docker-machine_linux-amd64)
-- [Linux - i386](https://github.com/docker/machine/releases/download/v0.2.0/docker-machine_linux-386)
+- [Windows - 32bit](https://github.com/netantho/machine/releases/download/v0.2.0/docker-machine_windows-386.exe)
+- [Windows - 64bit](https://github.com/netantho/machine/releases/download/v0.2.0/docker-machine_windows-amd64.exe)
+- [OSX - x86_64](https://github.com/netantho/machine/releases/download/v0.2.0/docker-machine_darwin-amd64)
+- [OSX - (old macs)](https://github.com/netantho/machine/releases/download/v0.2.0/docker-machine_darwin-386)
+- [Linux - x86_64](https://github.com/netantho/machine/releases/download/v0.2.0/docker-machine_linux-amd64)
+- [Linux - i386](https://github.com/netantho/machine/releases/download/v0.2.0/docker-machine_linux-386)
 
 ### OS X and Linux
 
@@ -57,7 +57,7 @@ To install on OS X or Linux, download the proper binary to somewhere in your
 most OS X machines these commands should suffice:
 
 ```
-$ curl -L https://github.com/docker/machine/releases/download/v0.2.0/docker-machine_darwin-amd64 > /usr/local/bin/docker-machine
+$ curl -L https://github.com/netantho/machine/releases/download/v0.2.0/docker-machine_darwin-amd64 > /usr/local/bin/docker-machine
 $ chmod +x /usr/local/bin/docker-machine
 ```
 
@@ -98,7 +98,7 @@ $ curl -L https://get.docker.com/builds/Windows/x86_64/docker-latest.exe > /bin/
 Next, install the Docker Machine binary:
 
 ```
-$ curl -L https://github.com/docker/machine/releases/download/v0.2.0/docker-machine_windows-amd64.exe > /bin/docker-machine
+$ curl -L https://github.com/netantho/machine/releases/download/v0.2.0/docker-machine_windows-amd64.exe > /bin/docker-machine
 ```
 
 Now running `docker-machine` should work.
@@ -136,7 +136,7 @@ daemon installed, and will create and start a VirtualBox VM with Docker running.
 
 ```
 $ docker-machine create --driver virtualbox dev
-INFO[0001] Downloading boot2docker.iso to /home/<your username>/.docker/machine/cache/boot2docker.iso...
+INFO[0001] Downloading boot2docker.iso to /home/<your username>/.netantho/machine/cache/boot2docker.iso...
 INFO[0011] Creating SSH key...
 INFO[0012] Creating VirtualBox VM...
 INFO[0019] Starting VirtualBox VM...
@@ -177,7 +177,7 @@ To see what will be set, run `docker-machine env dev`.
 $ docker-machine env dev
 export DOCKER_TLS_VERIFY="1"
 export DOCKER_HOST="tcp://172.16.62.130:2376"
-export DOCKER_CERT_PATH="/Users/<your username>/.docker/machine/machines/dev"
+export DOCKER_CERT_PATH="/Users/<your username>/.netantho/machine/machines/dev"
 export DOCKER_MACHINE_NAME="dev"
 # Run this command to configure your shell:
 # eval "$(docker-machine env dev)"
@@ -311,7 +311,7 @@ list of the flags/settings available and their defaults, see the output of
 When the creation of a host is initiated, a unique SSH key for accessing the
 host (initially for provisioning, then directly later if the user runs the
 `docker-machine ssh` command) will be created automatically and stored in the
-client's directory in `~/.docker/machines`. After the creation of the SSH key,
+client's directory in `~/.netantho/machines`. After the creation of the SSH key,
 Docker will be installed on the remote machine and the daemon will be configured
 to accept remote connections over TCP using TLS for authentication. Once this
 is finished, the host is ready for connection.
@@ -418,7 +418,7 @@ For example:
 ```
 $ docker-machine env --swarm swarm-master
 export DOCKER_TLS_VERIFY=1
-export DOCKER_CERT_PATH="/home/ehazlett/.docker/machines/.client"
+export DOCKER_CERT_PATH="/home/ehazlett/.netantho/machines/.client"
 export DOCKER_HOST=tcp://192.168.99.100:3376
 ```
 
@@ -461,7 +461,7 @@ Create a machine.
 
 ```
 $ docker-machine create --driver virtualbox dev
-INFO[0001] Downloading boot2docker.iso to /home/ehazlett/.docker/machine/cache/boot2docker.iso...
+INFO[0001] Downloading boot2docker.iso to /home/ehazlett/.netantho/machine/cache/boot2docker.iso...
 INFO[0000] Creating SSH key...
 INFO[0000] Creating VirtualBox VM...
 INFO[0007] Starting VirtualBox VM...
@@ -629,7 +629,7 @@ Show the Docker client configuration for a machine.
 
 ```
 $ docker-machine config dev
---tlsverify --tlscacert="/Users/ehazlett/.docker/machines/dev/ca.pem" --tlscert="/Users/ehazlett/.docker/machines/dev/cert.pem" --tlskey="/Users/ehazlett/.docker/machines/dev/key.pem" -H tcp://192.168.99.103:2376
+--tlsverify --tlscacert="/Users/ehazlett/.netantho/machines/dev/ca.pem" --tlscert="/Users/ehazlett/.netantho/machines/dev/cert.pem" --tlskey="/Users/ehazlett/.netantho/machines/dev/key.pem" -H tcp://192.168.99.103:2376
 ```
 
 #### env
@@ -646,7 +646,7 @@ $ env | grep DOCKER
 $ eval "$(docker-machine env dev)"
 $ env | grep DOCKER
 DOCKER_HOST=tcp://192.168.99.101:2376
-DOCKER_CERT_PATH=/Users/nathanleclaire/.docker/machines/.client
+DOCKER_CERT_PATH=/Users/nathanleclaire/.netantho/machines/.client
 DOCKER_TLS_VERIFY=1
 DOCKER_MACHINE_NAME=dev
 $ # If you run a docker command, now it will run against that host.
@@ -666,7 +666,7 @@ values in the format which `fish` expects:
 
 ```
 set -x DOCKER_TLS_VERIFY 1;
-set -x DOCKER_CERT_PATH "/Users/nathanleclaire/.docker/machine/machines/overlay";
+set -x DOCKER_CERT_PATH "/Users/nathanleclaire/.netantho/machine/machines/overlay";
 set -x DOCKER_HOST tcp://192.168.99.102:2376;
 set -x DOCKER_MACHINE_NAME overlay
 # Run this command to configure your shell:
@@ -763,7 +763,7 @@ function in the template.
 
 ```
 $ docker-machine inspect --format='{{json .Driver}}' dev-fusion
-{"Boot2DockerURL":"","CPUS":8,"CPUs":8,"CaCertPath":"/Users/hairyhenderson/.docker/machine/certs/ca.pem","DiskSize":20000,"IPAddress":"172.16.62.129","ISO":"/Users/hairyhenderson/.docker/machine/machines/dev-fusion/boot2docker-1.5.0-GH747.iso","MachineName":"dev-fusion","Memory":1024,"PrivateKeyPath":"/Users/hairyhenderson/.docker/machine/certs/ca-key.pem","SSHPort":22,"SSHUser":"docker","SwarmDiscovery":"","SwarmHost":"tcp://0.0.0.0:3376","SwarmMaster":false}
+{"Boot2DockerURL":"","CPUS":8,"CPUs":8,"CaCertPath":"/Users/hairyhenderson/.netantho/machine/certs/ca.pem","DiskSize":20000,"IPAddress":"172.16.62.129","ISO":"/Users/hairyhenderson/.netantho/machine/machines/dev-fusion/boot2docker-1.5.0-GH747.iso","MachineName":"dev-fusion","Memory":1024,"PrivateKeyPath":"/Users/hairyhenderson/.netantho/machine/certs/ca-key.pem","SSHPort":22,"SSHUser":"docker","SwarmDiscovery":"","SwarmHost":"tcp://0.0.0.0:3376","SwarmMaster":false}
 ```
 
 While this is usable, it's not very human-readable. For this reason, there is
@@ -775,13 +775,13 @@ $ docker-machine inspect --format='{{prettyjson .Driver}}' dev-fusion
     "Boot2DockerURL": "",
     "CPUS": 8,
     "CPUs": 8,
-    "CaCertPath": "/Users/hairyhenderson/.docker/machine/certs/ca.pem",
+    "CaCertPath": "/Users/hairyhenderson/.netantho/machine/certs/ca.pem",
     "DiskSize": 20000,
     "IPAddress": "172.16.62.129",
-    "ISO": "/Users/hairyhenderson/.docker/machine/machines/dev-fusion/boot2docker-1.5.0-GH747.iso",
+    "ISO": "/Users/hairyhenderson/.netantho/machine/machines/dev-fusion/boot2docker-1.5.0-GH747.iso",
     "MachineName": "dev-fusion",
     "Memory": 1024,
-    "PrivateKeyPath": "/Users/hairyhenderson/.docker/machine/certs/ca-key.pem",
+    "PrivateKeyPath": "/Users/hairyhenderson/.netantho/machine/certs/ca-key.pem",
     "SSHPort": 22,
     "SSHUser": "docker",
     "SwarmDiscovery": "",

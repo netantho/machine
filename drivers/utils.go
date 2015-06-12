@@ -3,9 +3,9 @@ package drivers
 import (
 	"fmt"
 
-	"github.com/docker/machine/log"
-	"github.com/docker/machine/ssh"
-	"github.com/docker/machine/utils"
+	"github.com/netantho/machine/log"
+	"github.com/netantho/machine/ssh"
+	"github.com/netantho/machine/utils"
 )
 
 func GetSSHClientFromDriver(d Driver) (ssh.Client, error) {

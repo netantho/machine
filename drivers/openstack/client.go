@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/docker/machine/log"
-	"github.com/docker/machine/utils"
-	"github.com/docker/machine/version"
+	"github.com/netantho/machine/log"
+	"github.com/netantho/machine/utils"
+	"github.com/netantho/machine/version"
 	"github.com/rackspace/gophercloud"
 	"github.com/rackspace/gophercloud/openstack"
 	"github.com/rackspace/gophercloud/openstack/compute/v2/extensions/keypairs"

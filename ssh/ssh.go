@@ -4,7 +4,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/docker/machine/log"
+	"github.com/netantho/machine/log"
 )
 
 func WaitForTCP(addr string) error {

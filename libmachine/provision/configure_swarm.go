@@ -7,9 +7,9 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/swarm"
-	"github.com/docker/machine/log"
+	"github.com/netantho/machine/libmachine/auth"
+	"github.com/netantho/machine/libmachine/swarm"
+	"github.com/netantho/machine/log"
 )
 
 type SwarmCommandContext struct {

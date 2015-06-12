@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/engine"
-	"github.com/docker/machine/libmachine/swarm"
+	"github.com/netantho/machine/libmachine/auth"
+	"github.com/netantho/machine/libmachine/engine"
+	"github.com/netantho/machine/libmachine/swarm"
 )
 
 func TestFillNestedHost(t *testing.T) {

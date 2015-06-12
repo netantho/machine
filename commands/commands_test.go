@@ -6,13 +6,13 @@ import (
 	"os"
 	"testing"
 
-	"github.com/docker/machine/drivers/fakedriver"
-	_ "github.com/docker/machine/drivers/none"
-	"github.com/docker/machine/libmachine"
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/engine"
-	"github.com/docker/machine/libmachine/swarm"
-	"github.com/docker/machine/state"
+	"github.com/netantho/machine/drivers/fakedriver"
+	_ "github.com/netantho/machine/drivers/none"
+	"github.com/netantho/machine/libmachine"
+	"github.com/netantho/machine/libmachine/auth"
+	"github.com/netantho/machine/libmachine/engine"
+	"github.com/netantho/machine/libmachine/swarm"
+	"github.com/netantho/machine/state"
 )
 
 const (

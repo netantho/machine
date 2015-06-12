@@ -5,8 +5,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/docker/machine/drivers"
-	"github.com/docker/machine/utils"
+	"github.com/netantho/machine/drivers"
+	"github.com/netantho/machine/utils"
 )
 
 type Machine struct {

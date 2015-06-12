@@ -9,7 +9,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/docker/machine/log"
+	"github.com/netantho/machine/log"
 )
 
 var (

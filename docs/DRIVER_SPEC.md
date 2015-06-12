@@ -70,7 +70,7 @@ return an error on failure.
 
 # Testing
 Testing is strongly recommended for drivers.  Unit tests are preferred as well
-as inclusion into the [integration tests](https://github.com/docker/machine#integration-tests).
+as inclusion into the [integration tests](https://github.com/netantho/machine#integration-tests).
 
 # Maintaining
 Driver contributors are strongly encouraged to maintain the driver to keep
@@ -89,7 +89,7 @@ The following describes what is needed to create a Machine Driver.  The driver
 interface has methods that must be implemented for all drivers.  These include
 operations such as `Create`, `Remove`, `Start`, `Stop` etc.
 
-For details see the [Driver Interface](https://github.com/docker/machine/blob/master/drivers/drivers.go#L24).
+For details see the [Driver Interface](https://github.com/netantho/machine/blob/master/drivers/drivers.go#L24).
 
 To provide this functionality, most drivers use a struct similar to the following:
 
@@ -144,5 +144,5 @@ func GetCreateFlags() []cli.Flag {
 ```
 
 ## Examples
-You can reference the existing [Drivers](https://github.com/docker/machine/tree/master/drivers)
+You can reference the existing [Drivers](https://github.com/netantho/machine/tree/master/drivers)
 as well.

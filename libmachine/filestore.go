@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/docker/machine/log"
-	"github.com/docker/machine/utils"
+	"github.com/netantho/machine/log"
+	"github.com/netantho/machine/utils"
 )
 
 type Filestore struct {

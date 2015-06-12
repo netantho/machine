@@ -1,7 +1,7 @@
 # Contributing to machine
 
-[![GoDoc](https://godoc.org/github.com/docker/machine?status.png)](https://godoc.org/github.com/docker/machine)
-[![Build Status](https://travis-ci.org/docker/machine.svg?branch=master)](https://travis-ci.org/docker/machine)
+[![GoDoc](https://godoc.org/github.com/netantho/machine?status.png)](https://godoc.org/github.com/netantho/machine)
+[![Build Status](https://travis-ci.org/netantho/machine.svg?branch=master)](https://travis-ci.org/netantho/machine)
 
 Want to hack on Machine? Awesome! Here are instructions to get you
 started.
@@ -219,7 +219,7 @@ and integration tests on the new supported environment
 - Participate in a weekly driver maintainer meeting
 
 If you can commit to those, the next step is to make sure the driver adheres
-to the [spec](https://github.com/docker/machine/blob/master/docs/DRIVER_SPEC.md).
+to the [spec](https://github.com/netantho/machine/blob/master/docs/DRIVER_SPEC.md).
 
 Once you have created and tested the driver, you can open a PR.
 

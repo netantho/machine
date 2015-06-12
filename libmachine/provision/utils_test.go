@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/machine/drivers/fakedriver"
-	"github.com/docker/machine/libmachine/auth"
+	"github.com/netantho/machine/drivers/fakedriver"
+	"github.com/netantho/machine/libmachine/auth"
 )
 
 func TestGenerateDockerOptionsBoot2Docker(t *testing.T) {

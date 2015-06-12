@@ -5,8 +5,8 @@ import (
 	neturl "net/url"
 
 	"github.com/codegangsta/cli"
-	"github.com/docker/machine/drivers"
-	"github.com/docker/machine/state"
+	"github.com/netantho/machine/drivers"
+	"github.com/netantho/machine/state"
 )
 
 // Driver is the driver used when no driver is selected. It is used to

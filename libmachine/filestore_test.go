@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	_ "github.com/docker/machine/drivers/none"
-	"github.com/docker/machine/utils"
+	_ "github.com/netantho/machine/drivers/none"
+	"github.com/netantho/machine/utils"
 )
 
 type DriverOptionsMock struct {

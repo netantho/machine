@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/docker/machine/log"
+	"github.com/netantho/machine/log"
 )
 
 // The /etc/os-release file contains operating system identification data

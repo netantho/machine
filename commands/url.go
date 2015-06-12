@@ -3,7 +3,7 @@ package commands
 import (
 	"fmt"
 
-	"github.com/docker/machine/log"
+	"github.com/netantho/machine/log"
 
 	"github.com/codegangsta/cli"
 )

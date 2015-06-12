@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/docker/machine/drivers/amazonec2/amz"
+	"github.com/netantho/machine/drivers/amazonec2/amz"
 )
 
 const (

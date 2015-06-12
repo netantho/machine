@@ -9,10 +9,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/provision/pkgaction"
-	"github.com/docker/machine/log"
-	"github.com/docker/machine/utils"
+	"github.com/netantho/machine/libmachine/auth"
+	"github.com/netantho/machine/libmachine/provision/pkgaction"
+	"github.com/netantho/machine/log"
+	"github.com/netantho/machine/utils"
 )
 
 type DockerOptions struct {

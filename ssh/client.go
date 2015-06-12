@@ -7,8 +7,8 @@ import (
 	"os/exec"
 
 	"github.com/docker/docker/pkg/term"
-	"github.com/docker/machine/log"
-	"github.com/docker/machine/utils"
+	"github.com/netantho/machine/log"
+	"github.com/netantho/machine/utils"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/crypto/ssh/terminal"
 )

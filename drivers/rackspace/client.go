@@ -3,9 +3,9 @@ package rackspace
 import (
 	"fmt"
 
-	"github.com/docker/machine/drivers/openstack"
-	"github.com/docker/machine/log"
-	"github.com/docker/machine/version"
+	"github.com/netantho/machine/drivers/openstack"
+	"github.com/netantho/machine/log"
+	"github.com/netantho/machine/version"
 	"github.com/rackspace/gophercloud"
 	"github.com/rackspace/gophercloud/rackspace"
 )

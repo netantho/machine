@@ -49,5 +49,5 @@ Full documentation [is available here](https://docs.docker.com/machine/).
 
 ## Contributing
 
-Want to hack on Machine? Please start with the [Contributing Guide](https://github.com/docker/machine/blob/master/CONTRIBUTING.md).
+Want to hack on Machine? Please start with the [Contributing Guide](https://github.com/netantho/machine/blob/master/CONTRIBUTING.md).
 

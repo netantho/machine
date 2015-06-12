@@ -6,8 +6,8 @@ import (
 	"sort"
 
 	"github.com/codegangsta/cli"
-	"github.com/docker/machine/log"
-	"github.com/docker/machine/state"
+	"github.com/netantho/machine/log"
+	"github.com/netantho/machine/state"
 )
 
 type Port struct {

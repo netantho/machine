@@ -13,7 +13,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/docker/machine/log"
+	"github.com/netantho/machine/log"
 )
 
 func GetHomeDir() string {
